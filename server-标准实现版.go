@@ -216,8 +216,10 @@ func (wsConn *wsConnection) wsClose() {
 
 func main() {
 	http.HandleFunc("/ws", wsHandler)
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":7777", nil)
 }
 
 // websocket url: ws://localhost:8080/ws
 // 在线websocket测试工具: http://coolaf.com/tool/chattest
+
+// 获取打开client.html,鼠标右键Run 'client.html'
